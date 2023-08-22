@@ -1,6 +1,6 @@
 '''
-Elaborar um programa que apresente o valor de uma potência de uma base qualquer (Variável b) elevada a um
-expoente qualquer (Variável e), ou seja, de be
+Elaborar um programa que apresente o valor de uma potência de uma base qualquer (Variável base) elevada a um
+expoente qualquer (Variável exp), ou seja, de be
 . (Sem usar Math.pow();)
 '''
 

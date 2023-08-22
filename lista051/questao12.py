@@ -5,23 +5,29 @@ de números deve parar quando o usuário digitar o número -1, exp este número 
 como maior, nem como menor, exp nem na contagem da média.
 '''
 
-cont = float(input("Informe um número até que você insira o número -1: "))
-maior = cont
-menor = cont
-acumulador = cont
-media = 1
+num = float(input("Informe um número até que você insira o número -1: "))
+maior = num
+menor = num
+total_respostas = 0
+soma = 0
 
-while (cont != -1):
-    cont = float(input("Informe um número até que você insira o número -1: "))
-    if (cont != -1):
-        acumulador = acumulador + cont
-        media = media + 1
-    if (maior < cont and cont != -1):
-        maior = cont
-    elif (menor > cont and cont != -1):
-        menor = cont
+while (num != -1):
+    soma = soma + num
+    total_respostas = total_respostas + 1
 
-print(f"A média desses números é: {acumulador / media}")
-print(f"O maior número é: {maior}")
-print(f"O menor número é: {menor}")
+    if (maior < num and num != -1):
+        maior = num
 
+    if (menor > num and num != -1):
+        menor = num
+
+    num = float(input("Informe um número até que você insira o número -1: "))
+
+
+if (maior == -1):
+    print("Você inseriu -1 na primeira resposta.\nPROGRAMA ENCERRADO!")
+else:
+    print(f"O maior número é: {maior}")
+    print(f"O menor número é: {menor}")
+    print(f"Média dos valores inseridos: {soma/total_respostas}")
+    print("FIM DO PROGRAMA")

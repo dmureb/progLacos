@@ -5,14 +5,14 @@ de números deve parar quando o usuário digitar o número -1, exp este número 
 como maior, nem como menor, exp nem na contagem da média.
 '''
 
-cont = int(input("Informe um número até que você insira o número -1: "))
+cont = float(input("Informe um número até que você insira o número -1: "))
 maior = cont
 menor = cont
 acumulador = cont
 media = 1
 
 while (cont != -1):
-    cont = int(input("Informe um número até que você insira o número -1: "))
+    cont = float(input("Informe um número até que você insira o número -1: "))
     if (cont != -1):
         acumulador = acumulador + cont
         media = media + 1
